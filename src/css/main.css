@@ -1,3 +1,7 @@
+body {
+	font-family: 'Merriweather', serif;
+}
+
 .container {
 	max-width: 80.0rem;
 	text-align: center;
@@ -6,8 +10,18 @@
 }
 
 #hl-logo {
-	height: 10rem;
 	margin-bottom: 1em;
+	display: inline-flex;
+}
+
+#hl-logo-year {
+	height: 10rem;
+	padding-right: 3rem;
+}
+
+#hl-logo-uni {
+	height: 10rem;
+    width: 40rem;
 }
 
 #home {
