@@ -5,9 +5,14 @@
 	padding-top: 7.5rem;
 }
 
+#hl-logo {
+	height: 10rem;
+	margin-bottom: 1em;
+}
+
 #home {
 	background: #f4f5f6;
-	height: 20rem;
+	height: 32rem;
 	position: relative;
 	max-height: 100vh;
 	min-width: 100vw;
@@ -16,6 +21,10 @@
 #content {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#hl-text {
+	text-align: justify;
 }
 
 .thumbnail {

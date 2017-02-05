@@ -13,13 +13,13 @@ div#top-header{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 370px;
-    height: 50px;
+    height: 40px;
     margin: auto;
     text-align: center;
     line-height: 20px;
     padding-top: 10px;
     position: relative;
-    margin-bottom: -45px;
+    margin-bottom: -40px;
 }
 
 /*
@@ -29,7 +29,6 @@ div#top-large-album{
     width: 370px;
     height: 370px;
     margin: auto;
-    margin-bottom: -45px;
     z-index: 0;
 }
 
@@ -46,7 +45,6 @@ img#large-album-art{
     Small Player
 */
 div#small-player{
-    line-height: 1;
     width: 370px;
     height: 45px;
     background-color: #f2f2f2;
@@ -61,7 +59,7 @@ div#small-player{
 */
 div#small-player-left{
     height: 45px;
-    width: 20px;
+    width: 25px;
     float: left;
 }
 
@@ -75,8 +73,8 @@ div.small-player-toggle-expand{
     cursor: pointer;
     width: 12px;
     height: 12px;
-    margin-left: 4px;
-    margin-top: 27px;images
+    margin-left: 6px;
+    margin-top: 27px;
 }
 
 div.small-player-toggle-contract{
@@ -104,7 +102,7 @@ img#small-player-album-art{
     Small Player Middle
 */
 div#small-player-middle{
-    margin-left: 8px;
+    margin-left: 5px;
     margin-top: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -128,6 +126,8 @@ div#small-player-middle-bottom{
 */
 div#small-player-middle-controls{
     display: none;
+    width: 72px;
+    margin: auto;
 }
 /*
     Small Player Right
@@ -135,7 +135,30 @@ div#small-player-middle-controls{
 div#small-player-right{
     width: 25px;
     float: left;
-    padding-top: 27px;
+}
+
+/*
+    Playlist Icon
+*/
+div#toggle-playlist{
+    background-image: url('../img/black-playlist.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 15px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+div#toggle-playlist-full{
+    background-image: url('../img/black-playlist.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
 }
 
 /*
@@ -143,6 +166,15 @@ div#small-player-right{
 */
 div#small-player-full-bottom{
     padding-top: 5px;
+    margin-top: -45px;
+}
+
+/*
+    Small Player Full Bottom Controls
+*/
+div#small-player-full-bottom-controls{
+    width: 72px;
+    margin: auto;
 }
 
 /*
@@ -152,28 +184,110 @@ div#small-player-full-bottom-info{
     margin: auto;
     margin-top: -7px;
     width: 350px;
+    clear: both;
+}
+div#small-player-full-bottom-info span.current-time{
+    display: block;
+    float: left;
+    margin-top: -6px;
+    margin-right: 3px;
+}
+div#small-player-full-bottom-info span.time-duration{
+    display: block;
+    float: left;
+    margin-top: -6px;
+    margin-left: 8px;
+}
+/*
+    Previous
+*/
+div#middle-top-previous{
+    height: 20px;
+    width: 23px;
+    cursor: pointer;
+    background-image: url('../img/black-prev.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 8px;
+    margin-right: 3px;
+}
+div#middle-bottom-previous{
+    height: 20px;
+    width: 23px;
+    cursor: pointer;
+    background-image: url('../img/black-prev.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 8px;
+    margin-right: 3px;
 }
 /*
     Play Pause
 */
-div.amplitude-play-pause{
-    margin: auto;
+div#middle-top-play-pause.amplitude-play-pause{
     height: 23px;
     width: 20px;
     cursor: pointer;
     margin-top: 5px;
+    float: left;
 }
-div.amplitude-paused{
+div#middle-top-play-pause.amplitude-paused{
     background-image: url('../img/black-play.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
-div.amplitude-playing{
+div#middle-top-play-pause.amplitude-playing{
     background-image: url('../img/black-pause.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
+div#small-player-bottom-play-pause.amplitude-play-pause{
+    margin: auto;
+    height: 23px;
+    width: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    float: left;
+}
+div#small-player-bottom-play-pause.amplitude-paused{
+    background-image: url('../img/black-play.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+div#small-player-bottom-play-pause.amplitude-playing{
+    background-image: url('../img/black-pause.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*
+    Next
+*/
+div#middle-top-next{
+    height: 20px;
+    width: 23px;
+    cursor: pointer;
+    background-image: url('../img/black-next.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+div#middle-bottom-next{
+    height: 20px;
+    width: 23px;
+    cursor: pointer;
+    background-image: url('../img/black-next.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 8px;
+    margin-left: 3px;
+}
 /*
     Song Time Visualization
 */
@@ -193,6 +307,7 @@ div#song-time-visualization-large{
     background-color: #bebebe;
     display: inline-block;
     vertical-align: middle;
+    float: left;
 }
 div#song-time-visualization-large div.amplitude-song-time-visualization-status{
     background-color: #676261;
@@ -212,6 +327,7 @@ div.now-playing-title{
 div.album-information{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
+    line-height: 10px;
     font-size: 12px;
     color: #bebebe;
 }
@@ -221,6 +337,7 @@ div.album-information{
 span.current-time{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
+    display: block;
     font-size: 10px;
     color: #676261;
 }
@@ -233,4 +350,48 @@ span.time-duration{
     font-weight: 300;
     font-size: 10px;
     color: #676261;
+}
+
+/*
+    Playlist
+*/
+div#small-player-playlist{
+    width: 370px;
+    height: 40px;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #f4f4f4;
+    padding-top: 15px;
+    height: 200px;
+    overflow-y: scroll;
+    display: none;
+}
+div.information{
+    padding: 0px 20px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #676261;
+}
+/*
+    Playlist Items
+*/
+div.playlist-item{
+    padding: 5px 20px;
+    cursor: pointer;
+    clear: both;
+}
+div.playlist-item.amplitude-active-song-container{
+    background-color: #eee;
+}
+div.playlist-item img.album-art{
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+div.playlist-meta{
+    float: left;
+    padding-left: 10px;
+    padding-top: 8px;
 }
