@@ -393,5 +393,6 @@ div.playlist-item img.album-art{
 div.playlist-meta{
     float: left;
     padding-left: 10px;
+    text-align: initial;
     padding-top: 8px;
 }
