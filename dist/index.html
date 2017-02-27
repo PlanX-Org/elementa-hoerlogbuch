@@ -23,11 +23,6 @@
 		<main class="wrapper">
 
 			<header class="container" id="home">
-				<div id="hl-logo">
-					<img id="hl-logo-year" src="img/logo.png">
-					<img id="hl-logo-uni" src="img/Uni_Bremen.svg">
-				</div>
-
 				<h1>HörLogBücher</h1>
 			</header>
 
@@ -123,7 +118,7 @@
 			<div class="amplitude-song-container amplitude-play-pause playlist-item" amplitude-song-index="0">
 				<img src="img/covers/001.jpg" class="album-art"/>
 				<div class="playlist-meta">
-					<div class="now-playing-title">Kolumbus Christoph</div>
+					<div class="now-playing-title">Christoph Kolumbus 1492</div>
 					<div class="album-information">HörLogBücher</div>
 				</div>
 				<div style="clear: both;"></div>
@@ -132,7 +127,7 @@
 			<div class="amplitude-song-container amplitude-play-pause playlist-item" amplitude-song-index="1">
 				<img src="img/covers/001.jpg" class="album-art"/>
 				<div class="playlist-meta">
-					<div class="now-playing-title">Prahn Ulrich</div>
+					<div class="now-playing-title">Ulrich Prahn 2006</div>
 					<div class="album-information">HörLogBücher</div>
 				</div>
 				<div style="clear: both;"></div>
@@ -141,7 +136,7 @@
 			<div class="amplitude-song-container amplitude-play-pause playlist-item" amplitude-song-index="2">
 				<img src="img/covers/001.jpg" class="album-art"/>
 				<div class="playlist-meta">
-					<div class="now-playing-title">Slocum Joshua</div>
+					<div class="now-playing-title">Joshua Slocum 1900</div>
 					<div class="album-information">HörLogBücher</div>
 				</div>
 				<div style="clear: both;"></div>
@@ -149,7 +144,7 @@
 			<div class="amplitude-song-container amplitude-play-pause playlist-item" amplitude-song-index="3">
 				<img src="img/covers/001.jpg" class="album-art"/>
 				<div class="playlist-meta">
-					<div class="now-playing-title">Tuerke Andreas</div>
+					<div class="now-playing-title">Andreas Türke 2016</div>
 					<div class="album-information">HörLogBücher</div>
 				</div>
 				<div style="clear: both;"></div>
@@ -157,7 +152,7 @@
 			<div class="amplitude-song-container amplitude-play-pause playlist-item" amplitude-song-index="4">
 				<img src="img/covers/001.jpg" class="album-art"/>
 				<div class="playlist-meta">
-					<div class="now-playing-title">Wahlde von Franz</div>
+					<div class="now-playing-title">Franz von Wahlde 1884-86</div>
 					<div class="album-information">HörLogBücher</div>
 				</div>
 				<div style="clear: both;"></div>
@@ -185,7 +180,7 @@
 				<br>
 
 				<h2>Quellen</h2>
-				<p>
+				<p id="hl-text">
 					PRAHN, Ulrich (2006): Im Packeis. PETERS, Anke (Hrsg.): Kapitäne erzählen. Geschichten von Seeleuten auf Großer Fahrt. Hinstorff Verlag, 2006, Rostock. S. 11-16
 					<br>
 					<br>
@@ -198,8 +193,8 @@
 				<br>
 
 				<h2>Danksagungen</h2>
-				<p>
-					Diese Buchausschnitte wurden im Rahmen des „Wissenschaftsjahr 2016/17: Meere und Ozeane“ von den Kulturwissenschaftsstudierenden Swantje Cieplik, Tobias Goetz, Lara Krone und Benny Windolph zusammengetragen. Wir bedanken uns für die freundliche Unterstützung von Creative Audio Service und den Sprechern Lukas Schwedeck, Philipp Strauss und Marlon Hangmann für die Vertonung dieses Projekts, sowie dem Aequator Verlag, dem Hinstorff Verlag, Dr. Andreas Türke und dem Deustchen Schiffahrtsmuseum Bremerhaven für die freundliche Genehmigung, die Texte vertonen zu dürfen.
+				<p id="hl-text">
+					Diese Buchausschnitte wurden im Rahmen des „Wissenschaftsjahr 2016/17: Meere und Ozeane“ von den Kulturwissenschaftsstudierenden Swantje Cieplik, Tobias Goetz, Lara Krone und Benny Windolph zusammengetragen. Wir bedanken uns für die freundliche Unterstützung von Creative Audio Service und den Sprechern Lukas Schwedeck, Philipp Strauss und Marlon Hangmann für die Vertonung dieses Projekts, sowie dem Aequator Verlag, dem Hinstorff Verlag, Dr. Andreas Türke und dem Deutschen Schiffahrtsmuseum Bremerhaven für die freundliche Genehmigung, die Texte vertonen zu dürfen.
 				</p>
 
 				<br>
@@ -207,6 +202,14 @@
 
 			<footer class="footer">
 				<section class="container">
+					<br>
+					<div id="hl-logo">
+						<img id="hl-logo-year" src="img/logo.png">
+						<img id="hl-logo-uni" src="img/Uni_Bremen.svg">
+					</div>
+					<p><a target="_blank" href="https://elementa.io/de/impressum" title="planx.io">Impressum</a></p>
+
+					<br>
 					<p>Made with <span style="color: red; font-size: 20px;">❤</span> by <a target="_blank" href="https://planx.io" title="planx.io">PlanX</a>.
 				</section>
 			</footer>
@@ -219,7 +222,7 @@
 		Amplitude.init({
 			"songs": [
 				{
-					"name": "Kolumbus Christoph",
+					"name": "Christoph Kolumbus 1492",
 					"artist": "Benny",
 					"album": "HörLogBücher",
 					"url": "audio/Kolumbus-Christoph_2017-02-25.mp3",
@@ -227,7 +230,7 @@
 					"cover_art_url": "img/covers/001.jpg"
 				},
 				{
-					"name": "Prahn Ulrich",
+					"name": "Ulrich Prahn 2006",
 					"artist": "Benny",
 					"album": "HörLogBücher",
 					"url": "audio/Prahn-Ulrich_2017-02-25.mp3",
@@ -235,7 +238,7 @@
 					"cover_art_url": "img/covers/001.jpg"
 				},
 				{
-					"name": "Slocum Joshua",
+					"name": "Joshua Slocum 1900",
 					"artist": "Benny",
 					"album": "HörLogBücher",
 					"url": "audio/Slocum-Joshua_2017-02-25.mp3",
@@ -243,7 +246,7 @@
 					"cover_art_url": "img/covers/001.jpg"
 				},
 				{
-					"name": "Tuerke Andreas",
+					"name": "Andreas Türke 2016",
 					"artist": "Benny",
 					"album": "HörLogBücher",
 					"url": "audio/Tuerke-Andreas_2017-02-25.mp3",
@@ -251,7 +254,7 @@
 					"cover_art_url": "img/covers/001.jpg"
 				},
 				{
-					"name": "Wahlde von Franz",
+					"name": "Franz von Wahlde 1884-86",
 					"artist": "Benny",
 					"album": "HörLogBücher",
 					"url": "audio/Wahlde-von-Franz_2017-02-25.mp3",
